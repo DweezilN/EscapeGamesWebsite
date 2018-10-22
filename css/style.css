@@ -1,0 +1,565 @@
+/*Dynamic gradient*/
+@-webkit-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+
+	@-moz-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@keyframes AnimationName { 
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+}
+
+html, body{height:100%;}
+.scroll
+{
+  /*position:fixed;/* position: fixed this line of code enabled = working scroll | this code disabled = working nav scroll links*/
+  bottom: 0;
+  left: 0;
+}
+
+/*This makes it overflow the right way*/
+body
+{
+	font-family: radcliffe;
+	text-shadow: 0 0 3px #0086c3;
+	color: #ABB1BA;
+	background-color: #0086c3;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+#header{
+	
+	width: 100vw;
+	height: 11%;
+	position: fixed;
+	margin: 0;
+	z-index: 6200;
+	box-shadow: 0px 3px 15px 0px black;
+
+	background: linear-gradient(270deg, #101f27 ,#37464f );
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+	-moz-animation: AnimationName 30s ease infinite;
+	animation: AnimationName 30s ease infinite;
+
+}
+#Downloads {
+	
+	background-image: url("../images/pirateBackground2.png");
+
+}
+
+@font-face {
+    font-family: turtles;
+    src: url(fonts/Turtles.otf);
+}
+@font-face {
+    font-family: radcliffe;
+    src: url(fonts/Radcliffe-Casual.ttf);
+}
+
+#navbar{
+	font-family: turtles;
+	color: #ABB1BA;
+	/*width: 41.8%;
+	height: 5%;*/
+	text-align: left;
+	position: fixed;
+	right: 2%;
+	top: 2.5%;
+	/*box-shadow: 0px 0px 7px 1px black;*/
+	font-size: 1.5em;
+	
+	
+	
+}
+
+h1{
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	font-family:turtles;
+	font-size: 2.7em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: green;
+}
+
+#Home{
+	background-image: url("../images/pirateBackground1.png");
+	background-size: cover;
+	/*height: 100%;
+	/*min-height: 800px;
+	/*width: 1000px;
+	height: 600px;*/
+	
+}
+
+#headerHome{
+	padding: 0px;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	background: linear-gradient(to left, rgba(0,0,0,0), rgba(16,31,39,1), rgba(0,0,0,0));
+	color: #ABB1BA;
+	
+}
+
+#teaserVideo{
+	background-color: #101f27;
+	text-align: center;
+	box-shadow: 0px 0px 15px 0px black;
+	height: 38vh;
+	width: 32vw;
+	margin: 0 auto;
+}
+
+#introText{
+	font-size: 1.5em;
+	background-color: #101f27;
+	background: linear-gradient(to left, rgba(0,0,0,0), rgba(16,31,39,1), rgba(0,0,0,0));
+	/*(color: #F1F1F1;*/
+	text-align: center;
+	width: 60%;
+	
+	margin: 0 auto;	
+	margin-top: 1vh;
+	padding: 1%;
+	padding-left: 10%;
+	padding-right: 10%;
+	border-image: linear-gradient(to left, rgba(0,0,0,0), rgba(1,0,0,0.5), rgba(0,0,0,0));
+	border-image-slice: 1;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+#introText > p{
+	margin: 2%;
+}
+
+
+#Levels{
+	background-image: url("../images/pirateBackground2.png");
+	
+}
+
+#headerLevels{
+	padding: 0px;
+	text-align: center;
+	width: 20%;
+	margin: 0 auto;
+	background: linear-gradient(to left, rgba(0,0,0,0), rgba(16,31,39,1), rgba(0,0,0,0));
+	color: #ABB1BA;
+}
+
+#lvlScreenshots{
+	
+}
+.zoom {
+	transition: all 0.8s; 
+	z-index: 1000;
+
+}
+.zoom:hover {
+    transform: scale(1.8); 
+     z-index: 10000;
+    position:relative;
+    left:-400px;
+}
+.desc {
+	padding: 0 20px;
+	margin-right: 20%;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	text-shadow: 0 0 3px black;
+
+}
+.pp {
+	display: block;
+	vertical-align: top;
+
+}
+.pp h3, .pp p{
+	width: 100%;	
+	margin: 5px;
+	font-size: 150%;
+	padding: 0 10px;
+}
+.gameDownload a:active {
+
+}
+
+.developers:hover > .ppic{
+	display: none;
+
+}
+#gameDownload {
+	width: 51px;
+	height:51px;
+	position:absolute;
+	top:3vh;
+	right:26vw;
+	
+
+}
+#gameDownload img{
+	width: 40px;
+	height:40px;
+	
+}
+.ppic {
+	display: block;
+	width:inherit;
+	
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;	
+	
+}
+.ppic img{
+	height: 250px;
+	position:relative;
+	left: 50px;
+}
+.par{
+	display:inline-block;
+	word-wrap: break-word;
+	text-align: left;
+	text-shadow: 0 0 1px #0086c3;
+	padding: 0 10px;
+
+}
+.num {
+	font-family: turtles;
+	font-size: 80%;
+}
+.over {
+	position:absolute;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+
+}
+.over h2{
+	position: relative;
+	top: 30px;
+}
+.zoom:hover > .over {
+	display:none;
+}
+
+#lvl1SH{
+	transform-origin: left top;
+	background-image: url("../images/tutorial.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #101f27;
+	position: relative;
+	box-shadow: 0px 0px 15px 0px black;
+	top: 10px;
+	left: 70px;
+	width: 20%;
+	height: 160px;
+	cursor:grab;
+}
+#lvl2SH{
+	background-image: url("../images/level1.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #101f27;
+	position: relative;
+	box-shadow: 0px 0px 15px 0px black;
+	top: 40px;
+	left: 70px;
+	width: 20%;
+	height: 160px;
+	transform-origin: left bottom;
+	cursor:grab;
+}
+#lvl3SH{
+	background-image: url("../images/level2.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #101f27;
+	position: relative;
+	box-shadow: 0px 0px 15px 0px black;
+	top: 70px;
+	left: 70px;
+	width: 20%;
+	height: 160px;
+	transform-origin: left bottom;
+	cursor:grab;
+}
+
+#textForLevel{
+	font-size: 1.5em;
+	background-color: #101f27;
+	background: linear-gradient(to left, rgba(0,0,0,0), rgba(16,31,39,1));
+	position: relative;
+	align-content: center;
+	
+	top: -470px;
+	left: 10%;
+	width: 65%;
+	height: 535px;
+	margin: 0 auto;
+	border-image: linear-gradient(to left, rgba(0,0,0,0), rgba(1,0,0,1));
+	border-image-slice: 1;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+
+
+
+#headerDevs{
+	padding: 0px;
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	background: linear-gradient(to left, rgba(0,0,0,0), rgba(16,31,39,1), rgba(0,0,0,0));
+	color: #ABB1BA;
+}
+
+/*#VB{
+	background-color: #101f27;
+	float:left;
+	align-content: center;
+	box-shadow: 0px 0px 15px 0px black;
+	width: 35%;
+	height: 200px;
+	
+}
+
+#NE{
+	background-color: #101f27;
+	float: left;
+	align-content: center;
+	box-shadow: 0px 0px 15px 0px black;
+	width: 35%;
+	height: 200px;
+	
+	
+}
+
+#ND{
+	background-color: #101f27;
+	float: left;
+	align-content: center;
+	box-shadow: 0px 0px 15px 0px black;
+	width: 35%;
+	height: 200px;
+	
+	
+}
+#MS{
+	background-color: #101f27;
+	float: left;
+	align-content: center;
+	box-shadow: 0px 0px 15px 0px black;
+	width: 35%;
+	height: 200px;
+}*/
+
+.developers{
+	background-color: #101f27;
+	float: left;
+	align-content: center;
+	box-shadow: 0px 0px 15px 0px black;
+	width: 35%;
+	height: 35%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+
+
+	
+}
+
+#developers{
+	height: 100vh;
+	width: 100vw;
+	padding-left: 13.8vw;
+	padding-right: 15vw;
+	margin: 0 auto;	
+	color: green;
+	
+}
+	
+
+/*NINA*/
+/*Classes added for scrolling*/
+
+
+
+
+
+
+/*Background image and width of enitre horizon is set here*/
+.horizon
+{
+  z-index: 1;
+  width: 6384px;
+}
+
+/*class for all the pages*/
+
+
+
+.page{
+	background-color: #37464f;
+	margin-top: 10vh;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    float: left;
+    /*padding-top: 50px;*/
+    margin-left: 30px;
+    box-shadow: 0px 0px 7px 1px black;
+    
+
+
+}
+
+/*The next are the individual classes per page*/
+/*
+	You might wonder why the left property just gets crazier
+	and that is because we don't hide things we just place them offscreen
+	ready to be scrolled to and made love to by the eyes of our users
+*/
+.home
+{
+    margin-left: 0px;
+}
+
+.levels
+{
+    
+
+}
+
+.devs
+{
+    
+    
+}
+
+/*This sets the width and top of all the pages*/
+.front{	
+ 	z-index: 1000;
+    top: 100px;
+    width: 7900px;
+}
+
+#logo
+{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 50px;
+	height: 50px;
+	z-index: 9000;
+	position:fixed;
+	top: 0px;
+
+}
+
+
+#socialMedia
+{
+	z-index: 9000;
+	position:fixed;
+	bottom: 10px;
+	background-color: #101f27;
+	box-shadow: 0px 0px 15px 0px black;
+	height: 50px;
+	width: 300px;
+	padding-left: 4px;
+
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.gallery{
+	margin: 10px 50px;
+}
+
+.gallery img{
+	width: 400px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.05);
+}
+
+
+
+
